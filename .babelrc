@@ -1,0 +1,17 @@
+{
+ "stage": 1,
+ "compact": false,
+ "blacklist": [],
+ "jsxPragma": "hJSX",
+ "optional": [
+   "runtime",
+   "utility.inlineEnvironmentVariables",
+   "spec.undefinedToVoid",
+   "validation.undeclaredVariableCheck"
+ ],
+ "env": {
+   "production": {},
+   "development": {},
+   "debug": {}
+ }
+}

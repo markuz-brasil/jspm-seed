@@ -1,0 +1,95 @@
+{
+  "name": "jspm-seed",
+  "version": "0.0.1",
+  "description": "Fast Boilerplate for ES2015 Apps Using JSPM - FLOWTYPE - GULP - KARMA - MOCHA",
+  "main": "dist/index.html",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "author": {
+    "name": "mgj",
+    "email": "",
+    "url": ""
+  },
+  "readmeFilename": "README.md",
+  "license": "Unlicense",
+  "scripts": {
+    "postinstall": "jspm install -y && rm _cache/config.js",
+    "test": "gulp compile-js && gulp bundle-specs && karma start --no-single-run",
+    "karma": "gulp compile-js && gulp bundle-specs && karma start; echo ''",
+    "build": "gulp build",
+    "start": "gulp dev",
+    "lint": "gulp lint"
+  },
+  "keywords": [
+    "es6",
+    "ES2015",
+    "jspm",
+    "gulp",
+    "babel",
+    "systemjs",
+    "karma",
+    "mocha",
+    "chai",
+    "sinon"
+  ],
+  "devDependencies": {
+    "flow-bin": "0.14.0",
+    "babel": ">=5.6.1",
+    "babel-core": ">=5.6.1",
+    "babel-eslint": ">=4.1.1",
+    "babel-runtime": ">=5.6.1",
+    "chai": ">=3.0.0",
+    "del": ">=1.2.0",
+    "esdoc": ">=0.2.1",
+    "eslint": ">=1.2.0",
+    "eslint-friendly-formatter": ">=1.0.8",
+    "eslint-plugin-babel": ">=2.1.1",
+    "gulp": "gulpjs/gulp.git#4.0",
+    "gulp-autoprefixer": ">=2.3.1",
+    "gulp-babel": ">=5.2.1",
+    "gulp-cached": ">=1.1.0",
+    "gulp-concat": ">=2.5.2",
+    "gulp-connect": ">=2.2.0",
+    "gulp-eslint": ">=1.0.0",
+    "gulp-flowtype": ">=0.4.7",
+    "gulp-if": ">=1.2.5",
+    "gulp-imagemin": ">=2.2.1",
+    "gulp-load-plugins": ">=0.10.0",
+    "gulp-minify-css": ">=1.1.6",
+    "gulp-minify-html": ">=1.0.3",
+    "gulp-rename": ">=1.2.2",
+    "gulp-replace": ">=0.5.3",
+    "gulp-shell": ">=0.4.3",
+    "gulp-sourcemaps": ">=1.5.2",
+    "gulp-uglify": ">=1.2.0",
+    "gulp-util": ">=3.0.5",
+    "imagemin-pngquant": ">=4.1.0",
+    "karma": ">=0.12.36",
+    "karma-chai": ">=0.1.0",
+    "karma-chrome-launcher": ">=0.1.12",
+    "karma-mocha": ">=0.1.10",
+    "karma-mocha-reporter": ">=1.0.2",
+    "karma-sinon-chai": ">=1.0.0",
+    "lodash": ">=3.10.0",
+    "mocha": ">=2.2.5",
+    "segfault-handler": ">=0.2.4",
+    "through2": ">=2.0.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "_cache",
+      "doc": "docs",
+      "packages": "_cache/lib",
+      "test": "test"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@5.8.24",
+      "babel-runtime": "npm:babel-runtime@5.8.20",
+      "core-js": "npm:core-js@0.9.18"
+    }
+  }
+}

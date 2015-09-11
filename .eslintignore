@@ -1,0 +1,9 @@
+dist/
+_*
+docs/
+*/config*.js
+client/polyfills/*
+.esdoc.json
+gulpfile.js
+karma.conf.js
+package.json

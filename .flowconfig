@@ -1,0 +1,16 @@
+[ignore]
+.*/dist/.*
+.*/release/.*
+.*/js/.*
+.*/gulp-flowtype/.*
+.*/flow/.*
+./_cache/.*
+
+
+[include]
+./_cache/flowtype/.*
+
+[libs]
+
+[options]
+module.system=node
